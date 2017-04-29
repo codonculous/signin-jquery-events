@@ -5,6 +5,10 @@ $(function(){
 
   });
 
+  $('.close').on('mousedown', function() {
+    $('.modal').fadeOut();
+  });
+
 });
 
 // When the user presses the .signin button, fade in the modal window
