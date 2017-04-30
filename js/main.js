@@ -1,15 +1,28 @@
 $(function(){
 
-  $('.signin').on('mousedown',function() {
+  $('.signin').mousedown( function() {
     $('.modal').fadeIn();
 
   });
 
-  $('.close').on('mousedown', function() {
+  $('.close').mousedown( function() {
     $('.modal').fadeOut();
   });
 
+  $('.submit').mousedown( function() {
+    $('.getstarted input').attr('class','error');
+  });
+
+  $('.getstarted input').mouseenter( function() {
+    $(this).removeClass('error');
+  });
+
+  
+
+
+
 });
+
 
 // When the user presses the .signin button, fade in the modal window
 // When the user presses the .close button, fade out the modal window
