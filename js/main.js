@@ -17,7 +17,11 @@ $(function(){
     $(this).removeClass('error');
   });
 
-  
+  $('.modal').mousedown( function() {
+    $('.modal').fadeOut();
+  });
+
+
 
 
 
